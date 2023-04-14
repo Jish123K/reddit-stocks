@@ -33,4 +33,11 @@ collections: Python built-in library, used to count the frequency of stock symbo
 
 nltk: Natural Language Toolkit, used to perform sentiment analysis on comments
 
+
+The data.py file is a module that contains a function named get_data() which the main program imports to access the Reddit API credentials. This helps keep sensitive information (such as API keys and passwords) separate from the main program, which is considered a good practice in software development.
+
+Overall, the main program extracts comments from the subreddit, filters them based on specific criteria (e.g., minimum upvotes, post flairs), extracts stock symbols mentioned in the comments (e.g., $GME), performs sentiment analysis on the comments, and then generates two plots: a word cloud of the most frequently mentioned symbols and a bar chart of the sentiment scores for the top picks. This can help users understand the sentiment around specific stocks mentioned on the subreddit.
+
+
+
 wordcloud: data visualization library, used to create the word cloud.
